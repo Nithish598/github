@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aarthy | AI & Data Science Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            margin-bottom: 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+        }
+
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        nav {
+            background: #111;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #00f2fe;
+        }
+
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #243b55;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .resume-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #243b55;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .resume-btn:hover {
+            background: #00c6ff;
+        }
+
+        footer {
+            text-align: center;
+            background: #111;
+            color: white;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="Aarthy.jpg.jpeg" alt="Profile Picture" class="profile-picture">
+    <h1>Aarthy</h1>
+    <p>B.Tech – Artificial Intelligence and Data Science</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate Artificial Intelligence and Data Science student with strong
+            interest in Machine Learning, Data Analytics, and Intelligent Systems.
+            I enjoy working with data to uncover insights and build smart applications.
+            My goal is to become a skilled AI Engineer and contribute to innovative
+            real-world solutions.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="card">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Technology (B.Tech)</strong></p>
+        <p>Artificial Intelligence and Data Science</p>
+        <p>Currently Pursuing</p>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Python Programming</li>
+            <li>Machine Learning</li>
+            <li>Deep Learning (Basics)</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Data Analysis (Pandas, NumPy)</li>
+            <li>Data Visualization (Matplotlib, Power BI)</li>
+            <li>SQL & Database Management</li>
+            <li>Cloud Basics (IBM Cloud / AWS)</li>
+            <li>Artificial Intelligence Concepts</li>
+        </ul>
+    </div>
+</section>
+
+<section id="projects">
+    <div class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li>Student Performance Prediction using Machine Learning</li>
+            <li>Spam Email Detection System using Python</li>
+            <li>AI Chatbot using Natural Language Processing</li>
+            <li>Data Analysis Dashboard Project</li>
+        </ul>
+    </div>
+</section>
+
+<section id="resume">
+    <div class="card" style="text-align:center;">
+        <h2>Resume</h2>
+        <a href="./mycv.pdf" target="_blank" class="resume-btn">Download Resume</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Aarthy | AI & Data Science Portfolio</p>
+</footer>
+
+<script>
+    // Smooth Scroll
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
